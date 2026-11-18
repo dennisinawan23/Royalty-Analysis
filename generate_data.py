@@ -40,7 +40,7 @@ import pandas as pd
 from faker import Faker
 
 fake = Faker("id_ID")
-random.seed(42) # untuk membuat data acak yang sama setiap kadli dijalankan
+Faker.seed(42) # untuk membuat data acak yang sama setiap kadli dijalankan
 
 # create table lagu
 songs = pd.DataFrame({
