@@ -23,4 +23,9 @@ join songs s;
 select title, count(*) as jumlah
 where songs
 group by title
-having count(*) > 1;
+having count(*) > 1;\
+
+
+select DISTINCT period from 
+royalties
+order by period;
